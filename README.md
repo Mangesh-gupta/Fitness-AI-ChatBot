@@ -42,9 +42,9 @@ An enterprise-grade, full-stack AI fitness coaching and product recommendation p
 
 ```
 Fitness-AI ChatBot/
-├── .env                              # Environment secrets and API configurations
-├── .env.example                      # Template configuration file
+├── .env                              # Environment configuration (API keys & settings)
 ├── requirements.txt                  # Python dependencies
+
 ├── run.py                            # Master runner script
 ├── README.md                         # Project documentation
 ├── backend/
@@ -100,13 +100,14 @@ Fitness-AI ChatBot/
 - Python 3.10 or 3.11 installed.
 
 ### 2. Configuration (.env)
-Create a `.env` file in the project root (see `.env.example`):
+Create a `.env` file in the project root:
 ```env
 NVIDIA_API_KEY=your_nvidia_api_key_here
 NVIDIA_BASE_URL=https://integrate.api.nvidia.com/v1
 LLM_MODEL=nvidia/nemotron-3-ultra-550b-a55b
 JWT_SECRET_KEY=fitness_ai_super_secret_jwt_key_change_in_production_2026
 ```
+
 
 
 ### 3. Launching the Application
